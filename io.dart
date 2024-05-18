@@ -4,7 +4,7 @@ String inputAge = collectAgeInput();
 String inputName = collectNameInput();
 String inputHeight = collectHeightInput();
 
-class dog {
+class Dog {
   String name = "$inputName";
   int Age = int.parse("$inputAge");
   String color = "Black and White";
@@ -12,7 +12,7 @@ class dog {
 }
 
 main() {
-  var myDog = new dog();
+  var myDog = new Dog();
   if (myDog != null) {
     int myDogAge = myDog.Age;
     String myDogName = myDog.name;
