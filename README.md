@@ -7,7 +7,7 @@ You've adopted a cute little dog named Ekuke . Ekuke needs regular care to stay 
 
 Instructions:
 
-1. Declare variables for:
+1. Declare variables for: <br>
     - Hunger (initially 10)
     - Happiness (initially 5)
     - Energy (initially 8)
