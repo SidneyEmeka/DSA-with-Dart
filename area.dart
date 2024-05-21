@@ -16,7 +16,7 @@ class Shape {
 
   Shape(this.color);
 
-  double calculateArea() {
+  double calculateArea() { 
     return 0.0;
   }
 }

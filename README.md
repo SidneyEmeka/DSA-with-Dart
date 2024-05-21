@@ -11,7 +11,7 @@ Instructions:
     - Hunger (initially 10)
     - Happiness (initially 5)
     - Energy (initially 8)
-2. Use a while loop to simulate days (up to 10 days).
+2. Use a while loop to simulate days (up to 10 days). <br>
 3. Within the loop:
     - Use if statements to:
         - Feed Ekuke(decrease hunger by 3) if hunger > 5
