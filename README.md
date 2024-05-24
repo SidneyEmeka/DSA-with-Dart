@@ -13,7 +13,7 @@ Instructions:
     - Energy (initially 8)
 2. Use a while loop to simulate days (up to 10 days). <br>
 3. Within the loop:
-    - Use if statements to:
+    - Use if statements to: <br>
         - Feed Ekuke(decrease hunger by 3) if hunger > 5
         - Play with Ekuke(increase happiness by 2) if happiness < 8
         - Give Ekuke a nap (increase energy by 2) if energy < 6

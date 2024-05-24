@@ -5,8 +5,7 @@ int energy = 8;
 int days = 1;
 
 void main() {
-  //ekukeCare();
-  iterate();
+  ekukeCare();
 }
 
 //Method for Ekuke care
@@ -35,12 +34,3 @@ void ekukeCare() {
       "Overall, Ekuke is a happy and energetic dog. He is also well fed everyday."); //Overall health status
 }
 
-void iterate() {
-  List<String> items = ["Food", "Cloth", "Shelter", "Drink", "Phone"];
-  for (String item in items) {
-    print("Hi, they gave  me $item");
-  }
-  for (int i = 0; i < items.length; i++) {
-    print("Hi, they gave me ${items[i]}");
-  }
-}

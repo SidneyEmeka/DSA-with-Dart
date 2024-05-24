@@ -1,27 +1,16 @@
-void main() {}
+void main() {
+  Map<String, int> marks = {
+    "Winkston": 2,
+    "Churchil": 90,
+    "Victory": 78,
+    "Chima": 90
+  };
 
-class Vehicle {
-  int speed = 10;
-  bool isEngineWOrking = false;
-  bool isLightOn = true;
+  // for (int i = 0; i < marks.length; i++) {
+  //   print("${marks.keys.toList()[i]} Scored ${marks.values.toList()[i]}");
+  // }
 
-  Vehicle(this.speed, this.isEngineWOrking, this.isLightOn);
-
-  void acceleration() {
-    speed += 10;
-  }
-}
-
-class Car extends Vehicle {
-  int noOfWheels = 4;
-
-  Car(this.noOfWheels, int speed, bool isEngineWOrking, bool isLightOn)
-      : super(speed, isEngineWOrking, isLightOn);
-}
-
-class Truck extends Vehicle {
-  int noOfWheels = 4;
-
-  Truck(this.noOfWheels, int speed, bool isEngineWOrking, bool isLightOn)
-      : super(speed, isEngineWOrking, isLightOn);
+  marks.forEach((name, score) {
+    print("$name Scored $score");
+  });
 }
