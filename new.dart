@@ -6,9 +6,9 @@ void main() {
     "Chima": 90
   };
 
-  // for (int i = 0; i < marks.length; i++) {
-  //   print("${marks.keys.toList()[i]} Scored ${marks.values.toList()[i]}");
-  // }
+  for (int i = 0; i < marks.length; i++) {
+    print("${marks.keys.toList()[i]} Scored ${marks.values.toList()[i]}");
+  }
 
   marks.forEach((name, score) {
     print("$name Scored $score");
