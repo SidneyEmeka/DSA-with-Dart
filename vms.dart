@@ -1,13 +1,18 @@
 void main() {
-  final fleet = Fleet("", "", 0);
+  final fleet = Fleet("Lagos");
+
+  final fleetList = [
+    Vehicle("Tesla", "Camaro", 2004),
+    Vehicle("Toyota", "Lexus", 20014),
+    Vehicle("Camry", "Spider", 2023),
+    Vehicle("Lexus", "Nissan", 2034)
+  ];
+
+  fleet.addAllVehicle(fleetList);
   fleet.displayFleet();
-  fleet.addVehicle("Tesla", "CYBER-TRUCK", 2004);
-  fleet.addVehicle("Toyota", "Nissan", 2014);
-  fleet.addVehicle("Mercedes", "AMG", 2013);
+
+  fleet.removeVehicle(fleetList[0]);
   fleet.displayFleet();
-//  fleet.removeVehicle("Mercedes", "AMG", 2013);
-  fleet.displayFleet();
-  
 }
 
 class Vehicle {
@@ -17,24 +22,33 @@ class Vehicle {
   Vehicle(this.vMake, this.vModel, this.vYear);
 }
 
-class Fleet extends Vehicle {
-  Fleet(String vMake, String vModel, int vYear) : super(vMake, vModel, vYear);
+class Fleet {
+  final fleetLocation;
+  Fleet(this.fleetLocation);
 
-  List<Vehicle> vehicles = [Vehicle("Ford", "Mustang", 1998)];
+  List<Vehicle> vehicles = [];
 
   void displayFleet() {
+    print("Current Fleet:");
+
     for (int i = 0; i < vehicles.length; i++) {
       print(
-          "${vehicles[i].vMake} ${vehicles[i].vModel} (${vehicles[i].vYear})");
+          "* ${vehicles[i].vMake} ${vehicles[i].vModel} (${vehicles[i].vYear})");
     }
   }
 
-  void addVehicle(vMake, vModel, vYear) {
-    vehicles.add(Vehicle(vMake, vModel, vYear));
-    print("You added a new Vehicle - ${vMake} ${vModel} ${vYear}");
+  void addAllVehicle(List<Vehicle> vList) {
+    vehicles.addAll(vList);
+
+    vList.map((v) {
+      print("""* Add Vehicle:
+    Make - ${v.vMake} 
+    Model - ${v.vModel} 
+    Year - ${v.vYear}""");
+    });
   }
 
-  // void removeVehicle(vMake, vModel, vYear) {
-  //   vehicles.remove(Vehicle(vMake, vModel, vYear));
-  // }
+  void removeVehicle(Vehicle v) {
+    vehicles.removeWhere((veh) => veh.vYear == v.vYear);
+  }
 }
