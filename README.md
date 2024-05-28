@@ -69,25 +69,3 @@ Current Fleet:
 * Toyota Corolla (2015)
 * Ford F-150 (2020)
 * Toyota Camry (2012)
-
-
-
-
-Hint: 
-
-To create a list refer to our last example where we have list of items ikem saw in the market n was pricing like below
-
-List<String> goods= [“apple”, “banana”];
-
-You can also create an empty list of item and add items to it like below 
-
-
-
-List<int> scores = []; // empty list
-
-// adding item into the list
-scores.add(70);
-
-To be submitted tomorrow 
-scores.add(40);
-
