@@ -1,4 +1,7 @@
-# Ekukecare
+# DSA with Dart
+-Basic dart programming
+
+## Ekukecare
 Objective: Create a Dart program that simulates caring for a pet(Ekuke). You'll use variables, if statements, and while loops to keep your pet happy and healthy!
 
 Story:
